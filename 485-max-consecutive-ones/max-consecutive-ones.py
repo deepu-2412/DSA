@@ -10,3 +10,4 @@ class Solution:
                 count = 0
         c[len(nums)] = count
         return max(c.values())
+
