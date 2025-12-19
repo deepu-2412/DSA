@@ -6,10 +6,11 @@ class Solution:
         while rp < len(nums):
             if nums[rp] == 0:
                 z = z+1
-            while z > k:
+            if z > k:
                 if nums[lp] == 0:
                     z = z - 1
                 lp = lp + 1
-            ml = max(ml,rp-lp+1)
+            if z<=k:
+                ml = max(ml,rp-lp+1)
             rp = rp+1
         return ml
