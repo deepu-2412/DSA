@@ -8,7 +8,6 @@ class Solution:
 
             if (r-l+1) - mf > k:
                 c[ord(s[l]) - ord('A')] -=1
-                mf = 0
                 l = l+1
             if (r-l+1)-mf<=k:
                 ml = max(ml,r-l+1)
